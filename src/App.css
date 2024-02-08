@@ -1,0 +1,21 @@
+/* BASE STYLES */
+li{
+    list-style: none;
+}
+
+a{
+    color:rgb(0, 0, 0);
+}
+
+.btn{
+    padding: 6px 12px;
+    font-size: 1.1rem;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(52, 23, 181);
+    color: white;
+}
+
+
