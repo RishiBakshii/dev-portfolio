@@ -17,6 +17,8 @@ function App() {
   const is680=useMediaQuery(theme.breakpoints.down(680))
   const is526=useMediaQuery(theme.breakpoints.down(526))
   const is480=useMediaQuery(theme.breakpoints.down(480))
+  const is663=useMediaQuery(theme.breakpoints.down(663))
+  const is414=useMediaQuery(theme.breakpoints.down(414))
 
   return (
     <>
@@ -30,7 +32,7 @@ function App() {
               
               <Stack rowGap={'1.8rem'} p={is526?2:0}>
                   
-                  <Typography variant='h2' fontWeight={700} style={{width:is526?"auto":'500px',lineHeight:"3.8rem"}}>Full Stack Mern Developer 👋🏻</Typography>
+                  <Typography variant='h2' fontWeight={700} style={{width:is526?"auto":'500px',lineHeight:is414?"3.0rem":is663?"3.4rem":"3.8rem"}}>Full Stack Mern Developer 👋🏻</Typography>
                   <Typography  variant='h6' fontWeight={400} fontSize={'1.2rem'} lineHeight={'1.8rem'} sx={{width:is526?"auto":"450px"}}>Hi, I'm Rishi Bakshi. A passionate Full Stack Developer based in India.📍</Typography>
                   
                   <Stack flexDirection={'row'} columnGap={'.5rem'} alignItems={'center'}>
