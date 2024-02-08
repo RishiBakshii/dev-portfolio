@@ -6,6 +6,15 @@ import { Navbar } from './components/Navbar';
 import { Box, Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { JobCard } from './components/JobCard';
 
+
+const SKILLS=[
+  {"SkillName":"Front-End Development:","SkillDetails":"HTML, CSS, JavaScript, React.js, Material UI"},
+  {"SkillName":"Back-End Development:","SkillDetails":"Node.js, Express.js, MongoDB"},
+  {"SkillName":"Full-Stack Expertise:","SkillDetails":"Designing, developing, and deploying full-stack web applications"},
+  {"SkillName":"Authentication Systems:","SkillDetails":"Building secure and robust login, signup, password reset, and OTP functionalities"},
+  {"SkillName":"Redux Toolkit Mastery:","SkillDetails":"Managing complex application state effectively using async thunks and other advanced features"},
+]
+
 function App() {
 
   const theme=useTheme()
@@ -70,48 +79,20 @@ function App() {
                     </Stack>
                     
                     <Stack rowGap={'.5rem'}>
-                          <Typography variant='h2'  fontWeight={800}>Full Stack Developer</Typography>
+                        <Typography variant='h2'  fontWeight={800}>Full Stack Developer</Typography>
 
                         <Stack rowGap={'1rem'} mt={'1rem'}>
-                            <Stack>
-                                <Typography  variant='body1' fontWeight={800} fontSize={'1.2rem'}>Front-End Development:</Typography>
-                                <Stack mt={'.2rem'} flexDirection={'row'} alignItems={'center'} columnGap={'1rem'}>
-                                  <Box sx={{width:"7px",height:"7px",bgcolor:"black",borderRadius:"100%"}}></Box>
-                                  <Typography variant='body1'>HTML, CSS, JavaScript, React.js, Material UI</Typography>
-                                </Stack>
-                            </Stack>
-
-                            <Stack>
-                              <Typography  variant='body1' fontWeight={800} fontSize={'1.2rem'}>Back-End Development:</Typography>
-                              <Stack mt={'.2rem'} flexDirection={'row'} alignItems={'center'} columnGap={'1rem'}>
-                                <Box sx={{width:"7px",height:"7px",bgcolor:"black",borderRadius:"100%"}}></Box>
-                                <Typography variant='body1'>Node.js, Express.js, MongoDB</Typography>
+                          {
+                            SKILLS.map((skill,index)=>(
+                              <Stack key={index}>
+                                  <Typography  variant='body1' fontWeight={800} fontSize={'1.2rem'}>{skill.SkillName}</Typography>
+                                  <Stack mt={'.2rem'} flexDirection={'row'} alignItems={'center'} columnGap={'1rem'}>
+                                      <Box sx={{width:"7px",height:"7px",bgcolor:"black",borderRadius:"100%"}}></Box>
+                                      <Typography width={'100%'} variant='body1'>{skill.SkillDetails}</Typography>
+                                  </Stack>
                               </Stack>
-                            </Stack>
-
-                            <Stack>
-                                <Typography  variant='body1' fontWeight={800} fontSize={'1.2rem'}>Full-Stack Expertise:</Typography>
-                                <Stack mt={'.2rem'} flexDirection={'row'} alignItems={'center'} columnGap={'1rem'}>
-                                  <Box sx={{width:"7px",height:"7px",bgcolor:"black",borderRadius:"100%"}}></Box>
-                                  <Typography variant='body1'>Designing, developing, and deploying full-stack web applications</Typography>
-                                </Stack>
-                            </Stack>
-
-                            <Stack>
-                                <Typography  variant='body1' fontWeight={800} fontSize={'1.2rem'}>Authentication Systems:</Typography>
-                                <Stack mt={'.2rem'} flexDirection={'row'} alignItems={'center'} columnGap={'1rem'}>
-                                  <Box sx={{width:"7px",height:"7px",bgcolor:"black",borderRadius:"100%"}}></Box>
-                                  <Typography variant='body1'>Building secure and robust login, signup, password reset, and OTP functionalities</Typography>
-                                </Stack>
-                            </Stack>
-
-                            <Stack>
-                                <Typography  variant='body1' fontWeight={800} fontSize={'1.2rem'}>Redux Toolkit Mastery:</Typography>
-                                <Stack mt={'.2rem'} flexDirection={'row'} alignItems={'center'} columnGap={'1rem'}>
-                                  <Box sx={{width:"7px",height:"7px",bgcolor:"black",borderRadius:"100%"}}></Box>
-                                  <Typography variant='body1'>Managing complex application state effectively using async thunks and other advanced features</Typography>
-                                </Stack>
-                            </Stack>
+                            ))
+                          }
                         </Stack>
                     </Stack>
                 
