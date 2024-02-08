@@ -68,7 +68,7 @@ function App() {
                     </Stack>
                     
                     <Stack rowGap={'.5rem'}>
-                          <Typography variant='h3'  whiteSpace={'nowrap'} fontWeight={800}>Full Stack Developer</Typography>
+                          <Typography variant='h2'  fontWeight={800}>Full Stack Developer</Typography>
 
                         <Stack rowGap={'1rem'} mt={'1rem'}>
                             <Stack>
