@@ -75,9 +75,9 @@ export const theme=createTheme({
           "@media (max-width:960px)": {
             fontSize: "1rem",
           },
-          "@media (max-width:600px)": {
-            fontSize: ".9rem",
-          },
+          // "@media (max-width:600px)": {
+          //   fontSize: ".9rem",
+          // },
         },
         body2: {
           fontSize: "1rem",
