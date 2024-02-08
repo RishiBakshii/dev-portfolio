@@ -79,7 +79,7 @@ function App() {
                     </Stack>
                     
                     <Stack rowGap={'.5rem'}>
-                        <Typography variant='h2'  fontWeight={800}>Full Stack Developer</Typography>
+                        <Typography variant='h2'  fontWeight={700}>Full Stack Developer</Typography>
 
                         <Stack rowGap={'1rem'} mt={'1rem'}>
                           {
@@ -109,10 +109,10 @@ function App() {
         <Stack component={'section'} width={'100%'} p={is1150?2:0}>
             
 
-            <Typography fontWeight={800} variant='h3'>Take a look at my projects</Typography>
+            <Typography fontWeight={800} variant='h2'>Take a look at my projects</Typography>
             
             
-            <Stack mt={'5rem'} rowGap={'5rem'} justifyContent={is800?'center':""} alignItems={is800?'center':""}>
+            <Stack mt={'7rem'} rowGap={'5rem'} justifyContent={is800?'center':""} alignItems={is800?'center':""}>
                 <ProjectCard title={'Mern-Ecommerce'}  description={'Modern e-commerce built with best practices in mind. MERN stack, Redux Toolkit for state management, Material UI for a delightful UI, and RESTful APIs for seamless integration. Dive in and explore!'} technologies={["Mern","Redux-Toolkit"]} imageUrl={"https://res.cloudinary.com/dh5fjdce9/image/upload/v1707365755/front_inhzp9.png"} githubLink={"https://github.com/RishiBakshii/mern-ecommerce"}/>
                 <ProjectCard reverse title={'Mern-Ecommerce'}  description={'Modern e-commerce built with best practices in mind. MERN stack, Redux Toolkit for state management, Material UI for a delightful UI, and RESTful APIs for seamless integration. Dive in and explore!'} technologies={["Mern","Redux-Toolkit"]} imageUrl={"https://res.cloudinary.com/dh5fjdce9/image/upload/v1707365755/front_inhzp9.png"} githubLink={"https://github.com/RishiBakshii/mern-ecommerce"}/>
             </Stack>
