@@ -10,11 +10,11 @@ export const ProjectCard = ({title,description,technologies,imageUrl,githubLink,
     const is500=useMediaQuery(theme.breakpoints.down(500))
 
   return (
-      <Stack width={is500?"auto":is800?"30rem":"100%"} flexDirection={reverse?'row-reverse':'row'} flexWrap={is800?"wrap":""}  justifyContent={'center'} alignItems={'center'} columnGap={'3rem'} rowGap={'3rem'}>
+      <Stack width={is500?"auto":is800?"25rem":"100%"} flexDirection={reverse?'row-reverse':'row'} flexWrap={is800?"wrap":""}  justifyContent={'center'} alignItems={'center'} columnGap={'3rem'} rowGap={'1rem'}>
 
         {/* left section */}
-        <div style={{height:is960?'200px':is1150?"240px":"280px",width:"100%"}}>
-          <img style={{ height:"100%",width:"100%",objectFit: is800?"contain":"contain"}} src={imageUrl} alt={`${title} project-image`}/>
+        <div style={{height:is960?'200px':is1150?"240px":"280px"}}>
+          <img style={{ height:"100%",width:is800?"100%":"",objectFit: is800?"contain":"contain"}} src={imageUrl} alt={`${title} project-image`}/>
         </div>
 
         {/* right section */}
