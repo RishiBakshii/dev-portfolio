@@ -57,7 +57,7 @@ function App() {
         </Stack>
 
 
-        <Stack p={is960?2:0} rowGap={'5rem'} flexWrap={'wrap'} component={'section'} width={'100%'} height={is1150?'auto':'100vh'} flexDirection={is1150?"column":'row'} justifyContent={'space-around'} alignSelf={'center'} justifySelf={'center'}>
+        <Stack mb={is1150?'5rem':""} p={is960?2:0} rowGap={'5rem'} flexWrap={'wrap'} component={'section'} width={'100%'} height={is1150?'auto':'100vh'} flexDirection={is1150?"column":'row'} justifyContent={'space-around'} alignSelf={'center'} justifySelf={'center'}>
 
 
                 <Stack rowGap={'2rem'} width={is680?'auto':'40rem'} alignSelf={is1150?'center':''}>

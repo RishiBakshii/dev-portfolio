@@ -8,7 +8,7 @@ export const JobCard = ({role,company,description}) => {
     <Stack width={is480?"auto":'400px'}  p={2} position={'relative'} rowGap={'1rem'} bgcolor={'#595e6e'} color={'whitesmoke'} borderRadius='10px'>
 
         <Stack>
-            <i style={{position:"absolute",right:-5,top:-5,color:"blue",backgroundColor:"white",padding:'.5rem',fontSize:"1.7rem",borderRadius:"100%"}} class='bx bxs-briefcase'></i>
+            <i style={{position:"absolute",right:-4,top:-4,color:"blue",backgroundColor:"white",padding:'.5rem',fontSize:"1.7rem",borderRadius:"100%"}} class='bx bxs-briefcase'></i>
             <Typography variant='h5' fontWeight={700}>{role}</Typography>
             <Typography variant='body1' fontWeight={500}>{company}</Typography>
         </Stack>
