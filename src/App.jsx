@@ -114,7 +114,6 @@ function App() {
             
             <Stack mt={'7rem'} rowGap={'5rem'} justifyContent={is800?'center':""} alignItems={is800?'center':""}>
                 <ProjectCard title={'Mern-Ecommerce'}  description={'Modern e-commerce built with best practices in mind. MERN stack, Redux Toolkit for state management, Material UI for a delightful UI, and RESTful APIs for seamless integration. Dive in and explore!'} technologies={["Mern","Redux-Toolkit"]} imageUrl={"https://res.cloudinary.com/dh5fjdce9/image/upload/v1707365755/front_inhzp9.png"} githubLink={"https://github.com/RishiBakshii/mern-ecommerce"}/>
-                <ProjectCard reverse title={'Mern-Ecommerce'}  description={'Modern e-commerce built with best practices in mind. MERN stack, Redux Toolkit for state management, Material UI for a delightful UI, and RESTful APIs for seamless integration. Dive in and explore!'} technologies={["Mern","Redux-Toolkit"]} imageUrl={"https://res.cloudinary.com/dh5fjdce9/image/upload/v1707365755/front_inhzp9.png"} githubLink={"https://github.com/RishiBakshii/mern-ecommerce"}/>
             </Stack>
 
 

@@ -22,9 +22,9 @@ export const Footer = () => {
 
                 <Stack mt={.5} flexDirection={is480?"column":'row'} columnGap={'1rem'} rowGap={'.6rem'}>
                     <MotionConfig whileHover={{scale:1.050}} whileTap={{scale:1}}>
-                        <motion.button className='btn'><Typography variant='body1'>Github</Typography></motion.button>
-                        <motion.button className='btn'><Typography variant='body1'>Linkedin</Typography></motion.button>
-                        <motion.button className='btn'><Typography variant='body1'>Twitter</Typography></motion.button>
+                        <a target='_blank' href="https://github.com/RishiBakshii"><motion.button className='btn'><Typography variant='body1'>Github</Typography></motion.button></a>
+                        <a target='_blank' href="https://www.linkedin.com/in/rishi-bakshi-75b224271/"><motion.button className='btn'><Typography variant='body1'>Linkedin</Typography></motion.button></a>
+                        <a target='_blank' href="https://x.com/RishiiBakshii?t=9qo9rCT5kTwkC-YQRVxcqw&s=08"><motion.button className='btn'><Typography variant='body1'>Twitter</Typography></motion.button></a>
                     </MotionConfig>
                 </Stack>
             
