@@ -1,5 +1,6 @@
 import { Box, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
+import {MotionConfig, motion} from 'framer-motion'
 
 export const ProjectCard = ({title,description,technologies,imageUrl,githubLink,liveLink,reverse=false}) => {
 
@@ -36,24 +37,27 @@ export const ProjectCard = ({title,description,technologies,imageUrl,githubLink,
           
             {/* action buttons */}
             <Stack flexDirection={'row'} columnGap={'1rem'}>
+                <MotionConfig whileHover={{x:3}} whileTap={{scale:0.9}}>
 
-                <a href={githubLink} target="_blank">
-                  <button style={{ border: "none", backgroundColor: "inherit" }}>
-                      <Stack flexDirection={'row'} alignItems={'center'} columnGap={'.2rem'}>
-                          <Typography variant="body1">Code</Typography>
-                          <i style={{ fontSize: "1.6rem" }} class="bx bxl-github"></i>
-                      </Stack>
-                  </button>
-                </a>
-                    
-                <a href={liveLink} target="_blank">
-                    <button style={{ border: "none", backgroundColor: "inherit" }}>
+                  <motion.button style={{ border: "none", backgroundColor: "inherit" }}>
+                    <a href={githubLink} target="_blank">
                         <Stack flexDirection={'row'} alignItems={'center'} columnGap={'.2rem'}>
-                            <Typography variant="body1">Live Demo</Typography>
-                            <i style={{ fontSize: "1.6rem" }} class="bx bx-link-external"></i>
+                            <Typography variant="body1">Code</Typography>
+                            <i style={{ fontSize: "1.6rem" }} class="bx bxl-github"></i>
                         </Stack>
-                    </button>
-                </a>
+                    </a>
+                  </motion.button>
+                    
+                    <motion.button style={{ border: "none", backgroundColor: "inherit" }}>
+                        <a href={liveLink} target="_blank">
+                            <Stack flexDirection={'row'} alignItems={'center'} columnGap={'.2rem'}>
+                                <Typography variant="body1">Live Demo</Typography>
+                                <i style={{ fontSize: "1.6rem" }} class="bx bx-link-external"></i>
+                            </Stack>
+                        </a>
+                    </motion.button>
+                    
+                </MotionConfig>
                 
             </Stack>
 

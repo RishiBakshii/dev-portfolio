@@ -12,7 +12,7 @@ export const Footer = () => {
   return (
     <>
     {/* <hr style={{width:"70rem",marginRight:'auto',marginLeft:"auto",color:"text.secondary",opacity:.3,marginTop:"5rem"}}/> */}
-    <footer style={{marginTop:"5rem",display: "flex",rowGap:'1.5rem',flexWrap:'wrap',padding:is480?".5rem": "2rem",justifyContent: is688?"flex-start":"space-evenly",alignItems: "flex-start"}}>
+    <footer id='Contact' style={{marginTop:"5rem",display: "flex",rowGap:'1.5rem',flexWrap:'wrap',padding:is480?".5rem": "2rem",justifyContent: is688?"flex-start":"space-evenly",alignItems: "flex-start"}}>
         {/* left */}
         <Stack rowGap={'1rem'} margin={'1rem'}>
             
@@ -22,9 +22,9 @@ export const Footer = () => {
 
                 <Stack mt={.5} flexDirection={is480?"column":'row'} columnGap={'1rem'} rowGap={'.6rem'}>
                     <MotionConfig whileHover={{scale:1.050}} whileTap={{scale:1}}>
-                        <a target='_blank' href="https://github.com/RishiBakshii"><motion.button className='btn'><Typography variant='body1'>Github</Typography></motion.button></a>
-                        <a target='_blank' href="https://www.linkedin.com/in/rishi-bakshi-75b224271/"><motion.button className='btn'><Typography variant='body1'>Linkedin</Typography></motion.button></a>
-                        <a target='_blank' href="https://x.com/RishiiBakshii?t=9qo9rCT5kTwkC-YQRVxcqw&s=08"><motion.button className='btn'><Typography variant='body1'>Twitter</Typography></motion.button></a>
+                        <motion.button className='btn'><a target='_blank' href="https://github.com/RishiBakshii"><Typography sx={{color:'white'}} variant='body1'>Github</Typography></a></motion.button>
+                        <motion.button className='btn'><a target='_blank' href="https://www.linkedin.com/in/rishi-bakshi-75b224271/"><Typography sx={{color:'white'}} variant='body1'>Linkedin</Typography></a></motion.button>
+                        <motion.button className='btn'><a target='_blank' href="https://x.com/RishiiBakshii?t=9qo9rCT5kTwkC-YQRVxcqw&s=08"><Typography sx={{color:'white'}} variant='body1'>Twitter</Typography></a></motion.button>
                     </MotionConfig>
                 </Stack>
             
@@ -59,7 +59,7 @@ export const Footer = () => {
             </Stack>
 
             {/* lower */}
-            <Typography variant='body1'>Made with ❤️ by RishiBakshi</Typography>
+            {/* <Typography variant='body1'>Made with ❤️ by RishiBakshi</Typography> */}
         
         </Stack>
 
