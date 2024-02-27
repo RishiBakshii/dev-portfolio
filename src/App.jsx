@@ -8,7 +8,7 @@ import { JobCard } from './components/JobCard';
 
 
 const SKILLS=[
-  {"SkillName":"Front-End Development:","SkillDetails":"HTML, CSS, JavaScript, React.js, Material UI"},
+  {"SkillName":"Front-End Development:","SkillDetails":"HTML, CSS, JavaScript, React.js, Material UI, Tailwind, Framer-Motion"},
   {"SkillName":"Back-End Development:","SkillDetails":"Node.js, Express.js, MongoDB"},
   {"SkillName":"Full-Stack Expertise:","SkillDetails":"Designing, developing, and deploying full-stack web applications"},
   {"SkillName":"Authentication Systems:","SkillDetails":"Building secure and robust login, signup, password reset, and OTP functionalities"},
@@ -60,7 +60,21 @@ function App() {
             
               <Box>
                     <motion.div style={{height:is960?'280px':'340px',width:"auto"}}>
-                      <motion.img initial={{borderRadius:"90% 80% 80% 90%"}} animate={{borderRadius:"96% 87% 83% 93%"}} transition={{ duration: 1, repeat: Infinity, ease: "anticipate" }} style={{height:"100%",width:"100%",objectFit:'contain'}} src="https://rishibakshii.github.io/portfolio2.0-react/static/media/close.53a0a852a4e98ccc0b0f.jpg" alt="image" />
+                    <motion.img
+  initial={{ borderRadius: "90% 80% 80% 90%" }}
+  animate={{
+    borderRadius: "96% 87% 83% 93%",
+  }}
+  transition={{
+    duration: 1, // Adjust to your desired duration
+    repeat: Infinity, // Ensures infinite repetition
+    repeatCount: 1,
+    repeatDelay:1   // Triggers the animation once, then loops endlessly
+  }}
+  style={{ height: "100%", width: "100%", objectFit: "contain" }}
+  src="https://rishibakshii.github.io/portfolio2.0-react/static/media/close.53a0a852a4e98ccc0b0f.jpg"
+  alt="image"
+/>
                     </motion.div>
               </Box>
             }
@@ -100,7 +114,7 @@ function App() {
 
 
                 <Stack alignSelf={is1150?'center':''}>
-                      <JobCard role={"Full Stack Developer"} company={"Hell Bent Softwares"} description={"Collaborated with international clients to design and develop custom web applications. Led meetings to understand client needs and translate them into functional features. Utilized the MERN stack to build scalable and user-friendly interfaces."}/>
+                      <JobCard role={"Full Stack Developer"} company={"Hell Bent Softwares"} description={"Worked for international clients to design and develop custom web applications. Led meetings to understand client needs and translate them into functional features. Utilized MERN stack and ReduxToolkit to build scalable and user-friendly interfaces."}/>
                 </Stack>
 
         </Stack>

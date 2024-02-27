@@ -1,5 +1,5 @@
 import { MotionConfig, motion } from 'framer-motion';
-import { cssIcon, reactIcon } from '../assets';
+import { cssIcon, framerMotionIcon, reactIcon, materialUiIcon } from '../assets';
 import { Button, Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
 
 
@@ -46,14 +46,22 @@ export const Footer = () => {
 
                 <Typography variant='h5' fontWeight={500}>Technologies Used</Typography>
                 
-                <Stack>
+                <Stack rowGap={1}>
                     <div style={{display:"flex", alignItems:'center', columnGap:10}}>
                         <p>React</p>
-                        <motion.img whileHover={{rotate:"100deg"}}  style={{width:'35px'}} src={reactIcon} alt="" />
+                        <motion.img whileHover={{rotate:"100deg"}} style={{width:"30px"}} src={reactIcon} alt="" />
+                    </div>
+                    <div style={{display:"flex", alignItems:'center', columnGap:10}}>
+                        <p>Framer Motion</p>
+                        <motion.img whileHover={{x:-3,rotate:'5deg'}} style={{width:"30px"}} src={framerMotionIcon} alt="" />
+                    </div>
+                    <div style={{display:"flex", alignItems:'center', columnGap:10}}>
+                        <p>Material UI</p>
+                        <motion.img whileHover={{x:-3,rotate:'5deg'}} width={'30px'} src={materialUiIcon} alt="" />
                     </div>
                     <div style={{display:"flex", alignItems:'center', columnGap:10}}>
                         <p>Css</p>
-                        <motion.img whileHover={{y:-2}}  style={{width:'35px'}} src={cssIcon} alt="" />
+                        <motion.img whileHover={{y:-2}}  style={{width:"30px"}} src={cssIcon} alt="" />
                     </div>
                 </Stack>
             </Stack>
