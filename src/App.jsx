@@ -66,7 +66,6 @@ function App() {
     borderRadius: "96% 87% 83% 93%",
   }}
   transition={{
-    duration: 1, // Adjust to your desired duration
     repeat: Infinity, // Ensures infinite repetition
     repeatCount: 1,
     repeatDelay:1   // Triggers the animation once, then loops endlessly
