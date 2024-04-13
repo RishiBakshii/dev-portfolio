@@ -9,10 +9,10 @@ import { JobCard } from './components/JobCard';
 
 const SKILLS=[
   {"SkillName":"Front-End Development:","SkillDetails":"HTML, CSS, JavaScript, TypeScript, React.js, Material UI, Tailwind, Framer-Motion"},
-  {"SkillName":"Back-End Development:","SkillDetails":"Node.js, Express.js, MongoDB, MySql"},
+  {"SkillName":"Back-End Development:","SkillDetails":"Node.js, Express.js, Socket.IO ,MongoDB, Passport.js"},
   {"SkillName":"Full-Stack Expertise:","SkillDetails":"Designing, developing, and deploying full-stack web applications"},
   {"SkillName":"Authentication Systems:","SkillDetails":"Building secure and robust login, signup, password reset, and OTP functionalities"},
-  {"SkillName":"Redux Toolkit Mastery:","SkillDetails":"Managing complex application state effectively using async thunks and other advanced features"},
+  {"SkillName":"Redux Toolkit Mastery:","SkillDetails":"Managing complex application state effectively using asyncThunks, slices and RTK Query."},
 ]
 
 function App() {
