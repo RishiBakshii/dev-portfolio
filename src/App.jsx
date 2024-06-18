@@ -126,7 +126,14 @@ function App() {
             
             
             <Stack mt={'7rem'} rowGap={'5rem'} justifyContent={is800?'center':""} alignItems={is800?'center':""}>
-                <ProjectCard title={'Mern-Ecommerce'}  description={'Modern e-commerce built with best practices in mind. MERN stack, Redux Toolkit for state management, Material UI for a delightful UI, and RESTful APIs for seamless integration. Dive in and explore!'} technologies={["Mern","Redux-Toolkit"]} imageUrl={"https://res.cloudinary.com/dh5fjdce9/image/upload/v1707365755/front_inhzp9.png"} githubLink={"https://github.com/RishiBakshii/mern-ecommerce"} liveLink={"https://mern-ecommerce-rishibakshii.vercel.app"}/>
+                {/* <ProjectCard title={'Mern-Ecommerce'}  description={'Modern e-commerce built with best practices in mind. MERN stack, Redux Toolkit for state management, Material UI for a delightful UI, and RESTful APIs for seamless integration. Dive in and explore!'} technologies={["Mern","Redux-Toolkit"]} imageUrl={"https://res.cloudinary.com/dh5fjdce9/image/upload/v1707365755/front_inhzp9.png"} githubLink={"https://github.com/RishiBakshii/mern-ecommerce"} liveLink={"https://mern-ecommerce-rishibakshii.vercel.app"}/> */}
+                <ProjectCard 
+                  title={'Baatchit-Realtime-Chat'}  
+                  imageUrl={'https://github.com/RishiBakshii/Baatchit-Modern-Chat-Application/raw/main/images/groupChatCreation.png'}
+                  description={"Baatchit is a modern real-time chat app designed for seamless and secure communication. Enjoy instant messaging, dynamic group chats, file sharing, typing indicators and more with Baatchit's robust feature set. Built with the latest tech, Baatchit ensures a smooth, user-friendly experience. Connect, chat, and share effortlessly with Baatchit!"} 
+                  githubLink={"https://github.com/RishiBakshii/Baatchit-Modern-Chat-Application"} 
+                  // technologies={['Typescript','MongoDb','Tailwind','React-Hook-Form','Aggregate-Pipelines','Zod','Socket.io','OAuth','Framer-Motion','Web crypto Api','Cloudinary','Rtk Query','Redux Toolkit','Firebase-Push-Notifications']}
+                  liveLink={"https://baatchit.online"}/>
             </Stack>
 
 
